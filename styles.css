@@ -1,130 +1,65 @@
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #fff;
-    margin: 0;
-    padding: 10px; /* Added padding for responsiveness */
-    box-sizing: border-box; /* Ensures padding doesn't affect overall dimensions */
-}
-
+body {    font-family: 'Arial', sans-serif;
+    display: flex;    justify-content: center;
+    align-items: center;    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);    color: #fff;
+    margin: 0;}
 .container {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-    padding: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-    width: 100%; /* Use full width of parent */
-    max-width: 500px; /* Maximum width to prevent it from being too wide */
-    margin: 20px auto; /* Center with auto margins */
-}
-
+    text-align: center;    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px; /* Increased radius for more curve */    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */    width: 400px; /* Width for the container */
+    margin: 20px; /* Margin for spacing */}
 h1, h2 {
-    margin-bottom: 20px;
-}
-
+    margin-bottom: 20px;}
 input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    width: 100%; /* Full width */
-    margin-bottom: 10px;
-}
-
+    padding: 10px;    border-radius: 5px;
+    border: 1px solid #ddd;    width: 80%;
+    margin-bottom: 10px;}
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    transition: background 0.3s;
-    width: 100%; /* Full width for buttons */
+    padding: 10px 20px;    font-size: 16px;
+    cursor: pointer;    border: none;
+    border-radius: 5px;    background-color: #333;
+    color: #fff;    transition: background 0.3s;
 }
-
-button:hover {
-    background-color: #555;
+button:hover {    background-color: #555;
 }
-
-.scoreboard {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+.scoreboard {    display: flex;
+    justify-content: space-between;    margin: 20px 0;
     font-size: 1em;
 }
-
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    margin: 20px auto;
-    padding: 10px;
-    border: 4px solid rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    max-width: 300px; /* Keep this consistent */
+.board {    display: grid;
+    grid-template-columns: repeat(3, 1fr);    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;    margin: 20px auto; /* Centering the board with auto margins */
+    padding: 10px; /* Added padding for spacing */    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px; /* Rounded corners for the board */    background: rgba(255, 255, 255, 0.5);
+    width: 100%; /* Full width of the container */    max-width: 300px; /* Limit max width for better appearance */
 }
-
-.board div {
-    background: rgba(255, 255, 255, 0.8);
-    border: 2px solid #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #333;
-    cursor: pointer;
-    transition: background 0.3s;
-    height: 80px; /* Adjusted height for better fitting */
-    border-radius: 15px;
+.board div {    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;    display: flex;
+    justify-content: center;    align-items: center;
+    font-size: 2em;    color: #333;
+    cursor: pointer;    transition: background 0.3s;
+    height: 100px; /* Fixed height for each cell */    border-radius: 15px; /* Added rounded corners to each cell */
 }
-
-.board div:hover {
-    background: rgba(255, 255, 255, 0.5);
+.board div:hover {    background: rgba(255, 255, 255, 0.5);
 }
-
-.controls {
-    margin: 20px 0;
+.controls {    margin: 20px 0;
 }
-
-.nav-buttons {
-    margin-top: 20px;
+.nav-buttons {    margin-top: 20px;
 }
-
 #message {
-    margin-top: 20px;
-    font-size: 1.2em;
+    margin-top: 20px;    font-size: 1.2em;
 }
-
-#leaderboard-list {
-    list-style: none;
-    padding: 0;
-}
-
+#leaderboard-list {    list-style: none;
+    padding: 0;}
 #games ul {
-    list-style: none;
-    padding: 0;
+    list-style: none;    padding: 0;
 }
-
 #games li {
-    margin: 10px 0;
-}
-
+    margin: 10px 0;}
 #games a {
-    text-decoration: none;
-    color: #333;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    text-decoration: none;    color: #333;
+    background-color: #fff;    padding: 10px;
+    border-radius: 5px;    transition: background 0.3s;
 }
-
-#games a:hover {
-    background-color: #ddd;
+#games a:hover {    background-color: #ddd;
 }
